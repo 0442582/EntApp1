@@ -1,0 +1,83 @@
+﻿@page
+@model EntApp1.pages.taghelpplayModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>taghelpplay</title>
+</head>
+<body>
+    <form method="post">
+        <label asp-for=Number1>Enter your first number</label>
+        <input asp-for=Number1 /><br /><br />
+
+        <label asp-for=Number2>Enter your second number</label>
+        <input asp-for=Number2 /><br /><br />
+
+        <label asp-for=Number3>Enter your third number</label>
+        <input asp-for=Number3 /><br /><br />
+
+        <label asp-for=Number4>Enter your fourth number</label>
+        <input asp-for=Number4 /><br /><br />
+
+        <label asp-for=Number5>Enter your fifth number</label>
+        <input asp-for=Number5 /><br /><br />
+
+        <label asp-for=Number6>Enter your sixth number</label>
+        <input asp-for=Number6 /><br /><br />
+
+        <label asp-for=Number7>Enter your 7th number</label>
+        <input asp-for=Number7 /><br /><br />
+
+        <label asp-for=Number8>Enter your 8th number</label>
+        <input asp-for=Number8 /><br /><br />
+
+
+
+        <br /><br /><br /><br />
+
+        <label asp-for=Name>Enter your name</label>
+        <input asp-for=Name /><br /><br />
+
+        <label asp-for=timeofday>Enter the time</label>
+        <input asp-for=timeofday /><br /><br />
+
+        <label asp-for=timeofday1>Enter the time</label>
+        <input asp-for=timeofday1 /><br /><br />
+
+        <label asp-for=IsContactAllowed></label>
+        <input asp-for=IsContactAllowed /><br /><br />
+        <button type="submit">Submit</button>
+    </form>
+
+        <h1>Pick your favourite season</h1>
+        <form method="post">
+            <label for="Spring">
+                <input value="Spring" id="Spring" type="Radio" asp-for="Season" />
+                Spring
+            </label>
+            <label for="Summer">
+                <input value="Summer" id="Summer" type="Radio" asp-for="Season" />
+                Summer
+            </label>
+            <label for="Autumn">
+                <input value="Autumn" id="Autumn" type="Radio" asp-for="Season" />
+                Autumn
+            </label>
+            <label for="Winter">
+                <input value="Winter" id="Winter" type="Radio" asp-for="Season" />
+                Winter
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+
+
+    
+</body>
+</html>
